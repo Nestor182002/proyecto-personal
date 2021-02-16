@@ -183,7 +183,7 @@
 .header-contenedor .header-contenedor-text .textos > h1{
 	text-decoration: none;
 	color: var(--negro);
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: bold;
 	opacity: 0.9;
 	font-family: var(--txtRaleway);
@@ -673,6 +673,10 @@ text-align: justify;
 	box-shadow: 0 6px 15px rgba(36, 37, 38, 0.10);
 	border-radius: 16px;
 	position: relative;
+	transition: 1s;
+}
+.conocimientos .conocimientosContent:hover{
+	transform: scale(1.2);
 	
 }
 

@@ -1,0 +1,212 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+#header{
+	width:100%;
+	height: 100vh;
+	background: url(./src/img/fondo.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.contenedor-sombra{
+	position: absolute;
+	width: 100%;
+	background: rgba(0,0,0,0.40);
+	height: 100vh;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	margin: auto;
+	max-width: 1700px;
+	height: 50px;
+}
+nav div{
+	margin-top: 10px;
+} 
+
+nav .name{
+	filter: blur(.6px);
+	position: relative;
+	z-index: 2
+} 
+
+nav div span{
+	position: relative;
+	z-index: 3;
+	color: #eaeded;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	border: 1px solid rgba(255,255,255,0.4);
+	border-radius: 16px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+nav div span:hover{
+	border: 1px solid rgba(255,255,255,1);
+	color: white;
+}
+
+nav .nav-a{
+	position: relative;
+	z-index: 3;
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+nav .nav-a a{
+	text-decoration: none;
+	color: #eaeded;
+	margin-left: 10px;
+	font-family: inherit;
+	letter-spacing: 2px;
+}
+nav .nav-a a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+.contenedor-all{
+	width: 100%;
+	height: 50%;
+	transform: translate(0px,45%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor-all div img{
+	box-shadow: rgba(0,0,0);
+	filter: blur(.7px);
+	border-radius: 60%;
+	border: 1px solid rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+.contenedor-all .contenedor-text{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.contenedor-all div h1{
+	color: #eaeded;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	border: 1px solid rgba(255,255,255,0.4);
+	border-radius: 16px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 20px;
+	transition: .5s;
+}
+.contenedor-all h1:hover{
+	border: 1px solid	#28a745;
+	color: #28a745;
+}
+.contenedor-all div p{
+	color: #eaeded;
+	font-size: 14px;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 30px;
+}
+.contenedor-all .container-table{
+	position: relative;
+	width: 50px;
+	height: 30px;
+}
+
+.contenedor-all .table::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	}
+
+.contenedor-all .table::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	filter: blur(30px);
+	}
+
+.contenedor-all span{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	background: rgba(0,0,0,0.2);
+	z-index: 2;
+	}
+
+.contenedor-all .table .content{
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	background: transparent;
+	color: ghostwhite;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.contenedor-all .table .content a{
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+
+//mis estudios
+
+#main {
+	width: 100%;
+	height: 100vh;
+}
+
+main .contenedor-main{
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .contenedor-main h2{
+	color: #black;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 16px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+main .contenedor-main p{
+	color: black;
+	font-size: 14px;
+	letter-spacing: 2px;
+	display: inline-block;
+}

@@ -40,44 +40,6 @@ mostrar.addEventListener('click', (e) => {
 })
 //click en barra de navegacion fin
 
-//ventana modal siguiente y atras start--------------
-
-let atras=document.getElementById('atras');
-let siguiente=document.getElementById('siguiente');
-
-let contenedor=document.getElementById('campos')
-
-siguiente.addEventListener('click',()=>{
-
-	contenedor.scrollLeft += contenedor.offsetWidth + 20;
-	
-})
-
-atras.addEventListener('click',()=>{
-
-	contenedor.scrollLeft -= contenedor.offsetWidth + 20;
-	
-})
-
-//ventana modal siguiente y atras end--------------
-
-
-//ventana modal abrir y cerrar
-
-let perfilOn=document.getElementById('perfil');
-let perfilOff=document.getElementById('close');
-
-let ventana=document.getElementById('ventana');
-
-perfilOn.addEventListener('click',()=>{
-
-	ventana.style.top = '0px';
-})
-perfilOff.addEventListener('click',()=>{
-
-	ventana.style.top = '-100%';
-})
-//ventana modal abrir y cerrar
 
 
 //barra de navegacion pegajosa-------------------------
@@ -105,51 +67,3 @@ if (scrollBefore == 0 || scrollBefore == 74 ) {
 })
 
 //barra de navegacion pegajosa end-------------------------
-
-
-//parte de conociminetos-------------------------
-
-let css=document.getElementById('boton-css');
-let js=document.getElementById('boton-js');
-let parteCss=document.getElementById('parte-css');
-let parteJs=document.getElementById('parte-js');
-
-css.addEventListener('mouseenter',()=>{
-	parteCss.style.visibility = 'visible';
-	parteCss.style.transition = '1s'
-})
-css.addEventListener('mouseleave',()=>{
-	parteCss.style.visibility = 'hidden';
-	parteCss.style.transition = '1s'
-})
-
-js.addEventListener('mouseenter',()=>{
-	parteJs.style.visibility = 'visible';
-	parteJs.style.transition = '1s'
-})
-js.addEventListener('mouseleave',()=>{
-	parteJs.style.visibility = 'hidden';
-	parteJs.style.transition = '1s'
-})
-
-
-let activar=true;
-css.addEventListener('mousedown',()=>{
-	if (activar) {
-	parteCss.style.visibility = 'visible';
-	activar=false
-}else{
-	parteCss.style.visibility = 'hidden';
-	activar=true;
-}
-})
-let active=true;
-js.addEventListener('mousedown',()=>{
-	if (active) {
-	parteJs.style.visibility = 'visible';
-	active=false;
-}else {
-	parteJs.style.visibility = 'hidden';
-	active=true;
-}
-})
